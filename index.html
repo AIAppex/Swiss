@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SwissTrust Bank</title>
+
+    <!-- css, favicon & icons link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- home -->
+    <header>
+        <a href="#" class="logo"><img src="img/swiss.png" alt="SwissTrust Bank"></a>
+
+        <ul class="nave">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#brands">Our Partners</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="id.html">Design Your Account</a></li>
+        </ul>  
+    </header>
+
+    <section class="inicio" id="home">
+        <div class="text-inicio">
+            <span>Introducing</span>
+            <h1>Swiss National Bank</h1>
+            <h2>Secure. Reliable. Exclusive.</h2>
+            <a href="https://youtu.be/76YwkLkAKuo?si=IC4UOFjUbD5f7sro" class="btn">Watch Video</a>    
+        </div>
+        <div class="img-inicio">
+            <img src="img/swit.png" alt="SwissTrust Bank">
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="song" id="services">
+            <div class="heading">
+                <span>Our Services</span>
+                <h1>Banking Tailored to Your Needs</h1>
+            </div>
+            <div class="song-cont">
+                <div class="box">
+                    <div class="song-img">
+                        <img src="img/img1.png" alt="Wealth Management">
+                    </div>
+                    <h2>Wealth Management</h2>
+                    <span>Ensure the growth of your fortune</span>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="box">
+                    <div class="song-img">
+                        <img src="img/img2.png" alt="Loans">
+                    </div>
+                    <h2>Premium Loans</h2>
+                    <span>Exclusive loan programs tailored for you</span>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="box">
+                    <div class="song-img">
+                        <img src="img/img3.png" alt="Private Banking">
+                    </div>
+                    <h2>Private Banking</h2>
+                    <span>Your personal financial advisor</span>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Brands (Partners) -->
+    <section class="discover" id="brands">
+        <div class="heading">
+            <span>Our Prestigious Partners</span>
+            <h1>World-Class Brands</h1>
+        </div>
+        <div class="cont-dis">
+            <div class="dis-img">
+                <img src="img/tgheuer.png" alt="Tag Heuer">
+            </div>
+            <div class="dis-img">
+                <img src="img/rolex.png" alt="Rolex">
+            </div>
+            <div class="dis-img">
+                <img src="img/lindt.png" alt="Lindt">
+            </div>
+            <div class="dis-img">
+                <img src="img/patek.png" alt="Lindt">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about" id="about">
+        <div class="heading">
+            <span>SwissTrust Bank</span>
+            <h1>Your Trusted Swiss Partner</h1>
+        </div>
+        <div class="abt-text">
+            <p>At SwissTrust, we pride ourselves on providing the highest level of banking services, built on trust, reliability, and security. Our foundation is grounded in Swiss tradition, where discretion and excellence are paramount.</p>            
+            <p>Switzerland is renowned worldwide for its strong economy, political stability, and robust financial sector. The Swiss Franc is one of the most stable currencies globally, reflecting the country's reputation as a global financial hub.</p>            
+            <p>The rich Swiss culture embraces precision, innovation, and quality—values that resonate through our banking services. From alpine heritage to cutting-edge technology, Switzerland seamlessly blends tradition with modernity.</p>            
+            <p>Our mission is to provide you with a world-class banking experience, combining the best of Swiss expertise with the latest in financial technology. Whether it’s wealth management, investments, or private banking, our services are designed to suit your individual needs and goals.</p>            
+            <p>Join us and experience a banking relationship that is built to last for generations. Welcome to Swiss National Bank.</p>
+          </div>
+          
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="links">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Swiss Web</a>
+        </div>
+        <p>&#169; Created by Swiss National Bank, 2025</p>
+
+        <script>
+            function setAppHeight() {
+                const doc = document.documentElement;
+                doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+            }
+
+            window.addEventListener('resize', setAppHeight);
+            window.addEventListener('orientationchange', setAppHeight);
+            window.addEventListener('load', setAppHeight);
+        </script>
+    </section>
+    
+</body>
+</html>
