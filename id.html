@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SNB Account</title>
+  <link rel="stylesheet" href="id.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Side -->
+    <div class="left-side">
+      <h2>Login</h2>
+      <p>Design Your Swiss National Bank Account</p>
+      <div class="input-group">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button class="login-btn" onclick="login()">Login Now</button>
+        <p id="error-message" style="color: red; display: none;">Invalid ID or Password. Please try again.</p>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="right-side">
+        <div class="content">
+            <div class="logo">
+                <img src="img/swiss.png" alt="Banco Logo"/>
+            </div>
+            <h2 class="title">Our Partners and Brands</h2>
+            <div class="brand-images">
+                <img src="img/tgheuer.png" alt="Brand 1" class="brand-img"/>
+                <img src="img/rolex.png" alt="Brand 2" class="brand-img"/>
+                <img src="img/lindt.png" alt="Brand 3" class="brand-img"/>
+                <img src="img/patek.png" alt="Brand 4" class="brand-img"/>
+            </div>
+            <a href="index.html" class="btn-back">Back to Home page</a>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    // Função de login
+    function login() {
+      // Obtendo os valores do ID e Senha
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // ID e Senha padrão
+      const correctUsername = 'user_W1z@d';
+      const correctPassword = '5ys#2025';
+
+      // Verificando se o ID e Senha estão corretos
+      if (username === correctUsername && password === correctPassword) {
+        // Redireciona para a página home.html
+        window.location.href = 'terminal.html'; 
+      } else {
+        // Exibe uma mensagem de erro
+        const errorMessage = document.getElementById('error-message');
+        errorMessage.style.display = 'block'; 
+      }
+    }
+
+    // Função para ajustar altura da viewport para teclado virtual e orientação
+    function setAppHeight() {
+      document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`);
+    }
+
+    // Eventos para atualizar altura ao redimensionar ou mudar orientação
+    window.addEventListener('resize', setAppHeight);
+    window.addEventListener('orientationchange', setAppHeight);
+
+    // Define a altura inicial no carregamento da página
+    setAppHeight();
+  </script>
+</body>
+</html>
+
